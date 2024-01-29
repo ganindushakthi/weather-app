@@ -10,11 +10,10 @@ A simple weather application built with React, displaying current weather inform
 
 ## Screenshots
 
-![WeatherApp Screenshot](./src/Components/Assets/ss/1.png);
-![WeatherApp Screenshot](./src/Components/Assets/ss/3.png);
-![WeatherApp Screenshot](./src/Components/Assets/ss/2.png);
-![WeatherApp Screenshot](./src/Components/Assets/ss/4.png);
-![WeatherApp Screenshot](./src/Components/Assets/ss/5.png);
-![WeatherApp Screenshot](./src/Components/Assets/ss/6.png);
-
+![WeatherApp Screenshot](./src/Components/Assets/ss/1.png)
+![WeatherApp Screenshot](./src/Components/Assets/ss/3.png)
+![WeatherApp Screenshot](./src/Components/Assets/ss/2.png)
+![WeatherApp Screenshot](./src/Components/Assets/ss/4.png)
+![WeatherApp Screenshot](./src/Components/Assets/ss/5.png)
+![WeatherApp Screenshot](./src/Components/Assets/ss/6.png)
 
