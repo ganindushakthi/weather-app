@@ -9,11 +9,13 @@ import rain_icon from '../Assets/rain.png';
 import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 import humidity_icon from '../Assets/humidity.png';
+import Footer from "../footer/Footer";
 
 const WeatherApp = () => {
     let api_key = "0d0ab895768d38505b5b701c0a9c217c";
 
     const [wicon, setwicon] = useState(cloud_icon);
+    const [backgroundClass, setBackgroundClass] = useState('cloud-background');
     
     const search = async () => {
         const element = document.getElementsByClassName("cityInput");
@@ -39,25 +41,34 @@ const WeatherApp = () => {
 
         if(data.weather[0].icon==="01d" || data.weather[0].icon==="01n"){
             setwicon(clear_icon);
+            setBackgroundClass('clear-background');
         }else if(data.weather[0].icon==="02d" || data.weather[0].icon==="02n"){
             setwicon(cloud_icon);
+            setBackgroundClass('cloud-background');
         }else if(data.weather[0].icon==="03d" || data.weather[0].icon==="03n"){
             setwicon(drizzle_icon);
+            setBackgroundClass('drizzle-background');
         }else if(data.weather[0].icon==="04d" || data.weather[0].icon==="04n"){
             setwicon(drizzle_icon);
+            setBackgroundClass('drizzle-background');
         }else if(data.weather[0].icon==="09d" || data.weather[0].icon==="09n"){
             setwicon(rain_icon);
+            setBackgroundClass('rain-background');
         }else if(data.weather[0].icon==="10d" || data.weather[0].icon==="10n"){
             setwicon(rain_icon);
+            setBackgroundClass('rain-background');
         }else if(data.weather[0].icon==="13d" || data.weather[0].icon==="13n"){
-            setwicon(search_icon);
+            setwicon(snow_icon);
+            setBackgroundClass('snow-background');
         }else{
             setwicon(clear_icon);
+            setBackgroundClass('clear-background');
         }
     
     }
     return (
-        <div className="container">
+        <>
+        <div className={`container ${backgroundClass}`}>
             <div className="top-bar">
                 <input type="text" className="cityInput" placeholder="Search" />
                 <div className="search-icon" onClick={()=>{search()}}>
@@ -85,7 +96,10 @@ const WeatherApp = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
+        
+        </>
     )
 } 
 

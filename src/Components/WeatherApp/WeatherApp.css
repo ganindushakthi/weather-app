@@ -1,10 +1,30 @@
+.rain-background {
+    background-image: linear-gradient(180deg, #1e2e48 0%, #103051 100% ) !important;
+}
+
+.clear-background {
+    background-image: linear-gradient(80deg, #87CEEB 0%, #5D9ACF 100% ) !important;
+}
+
+.cloud-background{
+    background-image: linear-gradient(180deg, #7b8c9d 0%, #b8c8df 100%) !important;
+}
+
+.drizzle-background{
+    background-image: linear-gradient(180deg, #3d4c5e 0%, #63768c 100%) !important;
+}
+
+.snow-background{
+    background-image: linear-gradient(180deg, #cfd8dc 0%, #ffffff 100%) !important;
+}
+
 .container{
     width: 607px;
     height: 829px;
     margin: auto;
     margin-top: 75px;
     border-radius: 12px;
-    background-image: linear-gradient(180deg,#130754 0%, #3b2f80 100% );
+    background-image: linear-gradient(180deg,#0ab976 0%, #97350f 100% );
 }
 
 .top-bar{
@@ -88,3 +108,4 @@
 .icon{
     margin-top: 10px;
 }
+
